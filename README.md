@@ -19,7 +19,7 @@ Este proyecto incluye soporte para ejecutar la aplicación dentro de un contened
 Desde el directorio raíz del proyecto (donde está el Dockerfile):
 ```bash
 # Construccion de imagen
-docker build -t tienda-online 
+docker build -t tienda-online .
 # Ejecucion Basica
 docker run --rm tienda-online
 # Salida esperada
