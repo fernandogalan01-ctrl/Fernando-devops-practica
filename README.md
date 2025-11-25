@@ -17,6 +17,26 @@ Este proyecto incluye soporte para ejecutar la aplicación dentro de un contened
 ##  1. Construir la imagen
 
 Desde el directorio raíz del proyecto (donde está el Dockerfile):
-
 ```bash
-docker build -t tienda-online .
+# Construccion de imagen
+docker build -t tienda-online 
+# Ejecucion Basica
+docker run --rm tienda-online
+# Salida esperada
+Usuarios registrados:
+Cliente(id=..., nombre=Ana Pérez, email=ana@example.com)
+Cliente(id=..., nombre=Carlos Ruiz, email=carlos@example.com)
+Cliente(id=..., nombre=María Gómez, email=maria@example.com)
+Administrador(id=..., nombre=Admin Tienda, email=admin@example.com)
+------------------------------------------------------------
+
+Inventario inicial:
+ProductoElectronico(id=..., nombre=Teléfono X100, stock=10, ...)
+ProductoElectronico(id=..., nombre=Portátil Z5, stock=5, ...)
+ProductoRopa(id=..., nombre=Camiseta Básica, stock=50, ...)
+...
+------------------------------------------------------------
+
+Pedido 1 creado:
+Pedido(id=..., cliente=Ana Pérez, total=...)
+...
